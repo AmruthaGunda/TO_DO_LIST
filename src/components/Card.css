@@ -1,0 +1,60 @@
+.card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: white;
+    position: relative; /* This ensures that the avatar can be positioned relative to the card */
+    width: 100%; /* Adjust width as needed */
+    min-height: 150px; /* Ensure enough height for content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Ticket number and title */
+.ticket-number {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.ticket-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Priority icon */
+.priority-icon {
+    margin-right: 8px;
+}
+
+/* Feature request label */
+.ticket-label {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    text-align: center;
+    align-self: center; /* Centers the label */
+}
+
+/* User profile avatar at top right */
+.user-profile {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: flex-end; /* Ensures the avatar aligns right */
+    align-items: center;
+}
+
+.user-profile img.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd; /* Optional: Add a border around the avatar */
+}

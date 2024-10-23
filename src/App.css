@@ -1,0 +1,37 @@
+.App {
+  text-align: left;
+  font-family: Arial, sans-serif;
+  background-color: #eee; /* Light gray background */
+  min-height: 100vh; /* Make sure it covers the whole screen */
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px; /* Adds space between columns without showing a line */
+  border: none;
+}
+
+.kanban-column {
+  background-color: transparent; /* Set to transparent to match board background */
+  flex: 1; /* This ensures columns take equal width */
+  border: none;
+}
+
+.card {
+  border: none; /* Remove any visible border */
+  background-color: #fff; /* White background for cards */
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: xx-small;
+  width: 100%; /* Ensures cards take the full width of the column */
+  height: 80px; /* Fixed height to ensure rectangular shape */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow to cards */
+}
+
+.group-selector,
+.sorting-options {
+  margin: 10px;
+}
